@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noted</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"  />
+</head>
+<body>
+    <div class="center-container">
+        <div class="linkPageFirstLine">
+            <h1 class="logoImg">Noted</h1>
+        <img src="images/gifImg.gif" alt="Daily Notes" class="sideGif">
+        <p>Sorry! I don't have memory ,<br> I have Notes.</p>
+        <button id="createButton" class="createButton">New Note</button>
+    
+        </div>
+
+    </div>
+    
+    
+
+    <dialog id="modal" class="modal">
+        <div class="modal-content">
+            <p style="margin-top: -3%;">Take Note</p>
+            <span id="closeButton" class="close">&times;</span>
+            <hr style="width: 113%; height: 1px; background-color: grey; color: #000;margin-left: -7%; margin-top: 1%;">
+            <div class="form-field">
+                <input autocomplete="off" type="text" id="title" placeholder="Title">
+            </div>
+            <div class="form-field">
+                <textarea autocomplete="off" id="description" placeholder="Description"></textarea>
+            </div>
+            <button id="saveButton" class="saveButton">Noted</button>
+        </div>
+    </dialog>
+    <div class="noteHeder">
+        <h1>Your Notes</h1>
+
+    </div>
+
+    
+
+    <div class="savedData">
+        
+        <dialog id="errorModal" class="modal">
+            <div class="modal-content">
+                <p id="errorMessage"></p>
+                <button id="closeErrorButton">OK</button>
+            </div>
+        </dialog>
+
+        
+    </div>
+
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
